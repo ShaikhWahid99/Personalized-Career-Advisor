@@ -7,15 +7,16 @@ export const quizQuestions = [
     },
     options: [
       {
-        id: "a",
-        text: { en: "Mathematics & Physics", hi: "गणित और भौतिकी" },
-        stream: "science",
-      },
-      {
         id: "b",
         text: { en: "Business & Economics", hi: "व्यापार और अर्थशास्त्र" },
         stream: "commerce",
       },
+      {
+        id: "a",
+        text: { en: "Mathematics & Physics", hi: "गणित और भौतिकी" },
+        stream: "science",
+      },
+
       {
         id: "c",
         text: { en: "Literature & History", hi: "साहित्य और इतिहास" },
@@ -36,6 +37,11 @@ export const quizQuestions = [
     },
     options: [
       {
+        id: "c",
+        text: { en: "Teacher/Writer", hi: "शिक्षक/लेखक" },
+        stream: "arts",
+      },
+      {
         id: "a",
         text: { en: "Doctor/Engineer", hi: "डॉक्टर/इंजीनियर" },
         stream: "science",
@@ -45,11 +51,7 @@ export const quizQuestions = [
         text: { en: "Business Owner/Manager", hi: "व्यापारी/प्रबंधक" },
         stream: "commerce",
       },
-      {
-        id: "c",
-        text: { en: "Teacher/Writer", hi: "शिक्षक/लेखक" },
-        stream: "arts",
-      },
+
       {
         id: "d",
         text: { en: "Government Officer", hi: "सरकारी अधिकारी" },
@@ -64,6 +66,11 @@ export const quizQuestions = [
       hi: "आप अपने खाली समय में किस गतिविधि का सबसे अधिक आनंद लेते हैं?",
     },
     options: [
+      {
+        id: "d",
+        text: { en: "Debating/discussing", hi: "बहस करना/चर्चा करना" },
+        stream: "arts",
+      },
       {
         id: "a",
         text: {
@@ -82,11 +89,6 @@ export const quizQuestions = [
         text: { en: "Reading books/writing", hi: "पुस्तकें पढ़ना/लिखना" },
         stream: "arts",
       },
-      {
-        id: "d",
-        text: { en: "Debating/discussing", hi: "बहस करना/चर्चा करना" },
-        stream: "arts",
-      },
     ],
   },
   {
@@ -101,15 +103,16 @@ export const quizQuestions = [
         text: { en: "Innovation & Discovery", hi: "नवाचार और खोज" },
         stream: "science",
       },
-      {
-        id: "b",
-        text: { en: "Success & Money", hi: "सफलता और पैसा" },
-        stream: "commerce",
-      },
+
       {
         id: "c",
         text: { en: "Knowledge & Wisdom", hi: "ज्ञान और बुद्धिमत्ता" },
         stream: "arts",
+      },
+      {
+        id: "b",
+        text: { en: "Success & Money", hi: "सफलता और पैसा" },
+        stream: "commerce",
       },
       {
         id: "d",
@@ -131,6 +134,11 @@ export const quizQuestions = [
         stream: "science",
       },
       {
+        id: "d",
+        text: { en: "Creative Expression", hi: "रचनात्मक अभिव्यक्ति" },
+        stream: "arts",
+      },
+      {
         id: "b",
         text: { en: "Leadership & Management", hi: "नेतृत्व और प्रबंधन" },
         stream: "commerce",
@@ -138,11 +146,6 @@ export const quizQuestions = [
       {
         id: "c",
         text: { en: "Communication & Writing", hi: "संवाद और लेखन" },
-        stream: "arts",
-      },
-      {
-        id: "d",
-        text: { en: "Creative Expression", hi: "रचनात्मक अभिव्यक्ति" },
         stream: "arts",
       },
     ],
