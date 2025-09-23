@@ -5,7 +5,6 @@ import { useTranslation } from "../../i18n";
 import { interests } from "../../data/mockData";
 import Card from "../../components/Card";
 
-
 const SignUpPage = () => {
   const navigate = useNavigate();
   const { language, setProfile } = useAppContext();
@@ -56,7 +55,11 @@ const SignUpPage = () => {
       return;
     }
 
-    if (!formData.name.trim() || !formData.class || formData.selectedInterests.length === 0) {
+    if (
+      !formData.name.trim() ||
+      !formData.class ||
+      formData.selectedInterests.length === 0
+    ) {
       alert("Please fill all fields and select at least one interest.");
       return;
     }
@@ -71,6 +74,7 @@ const SignUpPage = () => {
     };
 
     setProfile(profileData);
+    localStorage.setItem("userProfile", JSON.stringify(profileData));
 
     // Navigate to dashboard
     navigate("/dashboard");
@@ -255,8 +259,6 @@ const SignUpPage = () => {
                 Already have an account? Login
               </button>
             </div>
-
-
           </form>
         </Card>
       </div>

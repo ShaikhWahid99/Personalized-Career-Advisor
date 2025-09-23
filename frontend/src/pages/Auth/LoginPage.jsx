@@ -39,6 +39,7 @@ const LoginPage = () => {
       interests: [], // safe default
     };
     setProfile(profileData);
+    localStorage.setItem("userProfile", JSON.stringify(profileData));
 
     // Navigate to dashboard
     navigate("/dashboard");
