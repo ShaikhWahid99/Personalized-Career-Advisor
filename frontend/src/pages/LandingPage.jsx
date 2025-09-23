@@ -208,50 +208,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 bg-blue-600 text-white">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Ready to Start Your Career Journey?
-          </h2>
-          <p className="text-xl mb-10 opacity-90 max-w-2xl mx-auto">
-            Join thousands of students and professionals who have discovered
-            their ideal career path with our platform.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            {profile ? (
-              <>
-                <Link
-                  to="/dashboard"
-                  className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105"
-                >
-                  Go to Dashboard
-                </Link>
-                <Link
-                  to="/quiz"
-                  className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300"
-                >
-                  Take Quiz
-                </Link>
-              </>
-            ) : (
-              <>
-                <Link
-                  to="/signup"
-                  className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105"
-                >
-                  Start Your Journey
-                </Link>
-                <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
-                  Learn More
-                </button>
-              </>
-            )}
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-12 px-4">
         <div className="container mx-auto">
