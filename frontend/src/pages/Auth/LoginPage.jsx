@@ -29,12 +29,16 @@ const LoginPage = () => {
       alert("Email and Password are required.");
       return;
     }
+    if (formData.password.length < 6) {
+      alert("Password must be at least 6 characters.");
+      return;
+    }
 
     // Here you'd normally verify credentials with backend API
     // For now just save to context
     const profileData = {
       email: formData.email.trim(),
-      name: "Guest", // fallback
+      name: "", // fallback
       class: "10", // default
       interests: [], // safe default
     };
@@ -98,17 +102,17 @@ const LoginPage = () => {
             <div className="flex gap-4">
               <button
                 type="submit"
-                className="flex-1 bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                className="flex-1 bg-blue-600 text-white py-1 px-1 rounded-lg hover:bg-blue-700 transition-colors font-medium"
               >
                 Login
               </button>
 
               <button
                 type="button"
-                onClick={() => navigate("/")}
+                onClick={() => navigate("/signup")}
                 className="flex-1 border border-gray-400 text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-100 transition-colors font-medium"
               >
-                Don’t have an account? Sign Up
+                Don't have an account? Sign Up
               </button>
             </div>
           </form>

@@ -246,7 +246,7 @@ const SignUpPage = () => {
             <div className="flex gap-4">
               <button
                 type="submit"
-                className="flex-1 bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                className="flex-1 bg-blue-600 text-white py-4 px-2 rounded-lg hover:bg-blue-700 transition-colors font-medium"
               >
                 Sign Up
               </button>
