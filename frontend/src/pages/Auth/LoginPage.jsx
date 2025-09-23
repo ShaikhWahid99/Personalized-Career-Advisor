@@ -34,8 +34,10 @@ const LoginPage = () => {
     // For now just save to context
     const profileData = {
       email: formData.email.trim(),
+      name: "Guest", // fallback
+      class: "10", // default
+      interests: [], // safe default
     };
-
     setProfile(profileData);
 
     // Navigate to dashboard
