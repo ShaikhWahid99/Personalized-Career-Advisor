@@ -1,4 +1,4 @@
-import { useTranslation } from '../i18n';
+import { useTranslation } from "../i18n";
 
 const CollegeTable = ({ colleges, language }) => {
   const t = useTranslation(language);
@@ -52,14 +52,14 @@ const CollegeTable = ({ colleges, language }) => {
                 </span>
               </td>
               <td className="px-6 py-4 whitespace-nowrap">
-                <div className="text-sm text-gray-600">
-                  {college.fees}
-                </div>
+                <div className="text-sm text-gray-600">{college.fees}</div>
               </td>
               <td className="px-6 py-4 whitespace-nowrap">
                 <button
                   className="text-blue-600 hover:text-blue-900 text-sm font-medium"
-                  onClick={() => window.open(`https://${college.website}`, '_blank')}
+                  onClick={() =>
+                    window.open(`https://${college.website}`, "_blank")
+                  }
                 >
                   {t.viewDetails}
                 </button>

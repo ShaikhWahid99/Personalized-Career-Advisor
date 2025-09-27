@@ -39,7 +39,7 @@ export const translations = {
     dashboardTitle: "Your Career Dashboard",
     suggestedCourses: "Suggested Courses",
     careerPath: "Career Path Visualization",
-    nearbyColleges: "Nearby Government Colleges",
+    nearbyColleges: "Top Government Colleges",
     timeline: "Important Timeline",
 
     // Career Streams
