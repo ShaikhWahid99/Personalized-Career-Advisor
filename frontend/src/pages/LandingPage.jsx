@@ -154,7 +154,7 @@ const LandingPage = () => {
       </section>
 
       {/* How it Works Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-gray-50 to-gray-100">
+      <section className="py-20 px-4 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
@@ -243,7 +243,7 @@ const LandingPage = () => {
                 Data Collection
               </h3>
               <p className="text-sm text-gray-600">
-                Profile information securely captured via our Express.js API
+                Profile information securely captured via Express.js API
               </p>
             </div>
 
@@ -327,17 +327,18 @@ const LandingPage = () => {
                 Smart Analysis
               </h3>
               <p className="text-sm text-gray-600">
-                Intelligent algorithms generate personalized recommendations
+                User queries are processed via LLMs with structured prompts
               </p>
             </div>
           </div>
 
           {/* Additional workflow steps */}
-          <div className="grid md:grid-cols-2 gap-8 mt-12">
-            <div className="flex items-start space-x-4">
-              <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+          <div className="grid md:grid-cols-3 gap-6 mt-12">
+            {/* Step 4 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-4">
                 <svg
-                  className="w-6 h-6 text-white"
+                  className="w-8 h-8 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -350,22 +351,37 @@ const LandingPage = () => {
                   ></path>
                 </svg>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  Resource Aggregation
-                </h3>
-                <p className="text-gray-600">
-                  Our system fetches relevant courses, scholarships, and college
-                  information from multiple sources to provide comprehensive
-                  guidance.
-                </p>
-              </div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                Resource Aggregation
+              </h3>
+              <p className="text-sm text-gray-600 max-w-sm">
+                Relevant courses, scholarships, and college info are fetched
+                from multiple sources.
+              </p>
             </div>
 
-            <div className="flex items-start space-x-4">
-              <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
+            {/* Arrow */}
+            <div className="hidden md:flex items-center justify-center">
+              <svg
+                className="w-8 h-8 text-orange-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                ></path>
+              </svg>
+            </div>
+
+            {/* Step 5 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center mb-4">
                 <svg
-                  className="w-6 h-6 text-white"
+                  className="w-8 h-8 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -378,15 +394,13 @@ const LandingPage = () => {
                   ></path>
                 </svg>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  Real-time Delivery
-                </h3>
-                <p className="text-gray-600">
-                  Curated recommendations and resources are delivered instantly
-                  to your React dashboard in a clean, organized format.
-                </p>
-              </div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                Real-time Delivery
+              </h3>
+              <p className="text-sm text-gray-600 max-w-sm">
+                Curated recommendations are delivered instantly to the React
+                dashboard.
+              </p>
             </div>
           </div>
         </div>
