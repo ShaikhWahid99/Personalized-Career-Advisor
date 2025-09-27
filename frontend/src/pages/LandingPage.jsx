@@ -209,9 +209,9 @@ const LandingPage = () => {
       </section>
 
       {/* Backend Workflow Section */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-16 px-4 bg-white">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
               Behind the Scenes
             </h2>
@@ -221,12 +221,12 @@ const LandingPage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-5 gap-6">
+          <div className="grid md:grid-cols-11 gap-6 max-w-6xl mx-auto">
             {/* Step 1 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-4">
+            <div className="flex flex-col items-center text-center md:col-span-3">
+              <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mb-6">
                 <svg
-                  className="w-8 h-8 text-white"
+                  className="w-10 h-10 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -239,18 +239,18 @@ const LandingPage = () => {
                   ></path>
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
                 Data Collection
               </h3>
-              <p className="text-sm text-gray-600">
+              <p className="text-base text-gray-600 leading-relaxed">
                 Profile information securely captured via Express.js API
               </p>
             </div>
 
             {/* Arrow */}
-            <div className="hidden md:flex items-center justify-center">
+            <div className="hidden md:flex items-center justify-center md:col-span-1">
               <svg
-                className="w-8 h-8 text-blue-400"
+                className="w-10 h-10 text-blue-400"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -265,10 +265,10 @@ const LandingPage = () => {
             </div>
 
             {/* Step 2 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mb-4">
+            <div className="flex flex-col items-center text-center md:col-span-3">
+              <div className="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mb-6">
                 <svg
-                  className="w-8 h-8 text-white"
+                  className="w-10 h-10 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -281,18 +281,18 @@ const LandingPage = () => {
                   ></path>
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
                 Secure Storage
               </h3>
-              <p className="text-sm text-gray-600">
+              <p className="text-base text-gray-600 leading-relaxed">
                 Data validated and stored in MongoDB for analysis
               </p>
             </div>
 
             {/* Arrow */}
-            <div className="hidden md:flex items-center justify-center">
+            <div className="hidden md:flex items-center justify-center md:col-span-1">
               <svg
-                className="w-8 h-8 text-green-400"
+                className="w-10 h-10 text-green-400"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -307,10 +307,10 @@ const LandingPage = () => {
             </div>
 
             {/* Step 3 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mb-4">
+            <div className="flex flex-col items-center text-center md:col-span-3">
+              <div className="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center mb-6">
                 <svg
-                  className="w-8 h-8 text-white"
+                  className="w-10 h-10 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -323,22 +323,22 @@ const LandingPage = () => {
                   ></path>
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
                 Smart Analysis
               </h3>
-              <p className="text-sm text-gray-600">
+              <p className="text-base text-gray-600 leading-relaxed">
                 User queries are processed via LLMs with structured prompts
               </p>
             </div>
           </div>
 
           {/* Additional workflow steps */}
-          <div className="grid md:grid-cols-3 gap-6 mt-12">
+          <div className="grid md:grid-cols-12 gap-8 mt-16 max-w-6xl mx-auto">
             {/* Step 4 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-4">
+            <div className="flex flex-col items-center text-center md:col-span-5">
+              <div className="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center mb-6">
                 <svg
-                  className="w-8 h-8 text-white"
+                  className="w-10 h-10 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -351,19 +351,19 @@ const LandingPage = () => {
                   ></path>
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
                 Resource Aggregation
               </h3>
-              <p className="text-sm text-gray-600 max-w-sm">
+              <p className="text-base text-gray-600 leading-relaxed max-w-xs">
                 Relevant courses, scholarships, and college info are fetched
                 from multiple sources.
               </p>
             </div>
 
             {/* Arrow */}
-            <div className="hidden md:flex items-center justify-center">
+            <div className="hidden md:flex items-center justify-center md:col-span-2">
               <svg
-                className="w-8 h-8 text-orange-400"
+                className="w-10 h-10 text-orange-400"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -378,10 +378,10 @@ const LandingPage = () => {
             </div>
 
             {/* Step 5 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center mb-4">
+            <div className="flex flex-col items-center text-center md:col-span-5">
+              <div className="w-20 h-20 bg-teal-500 rounded-full flex items-center justify-center mb-6">
                 <svg
-                  className="w-8 h-8 text-white"
+                  className="w-10 h-10 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -394,10 +394,10 @@ const LandingPage = () => {
                   ></path>
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
                 Real-time Delivery
               </h3>
-              <p className="text-sm text-gray-600 max-w-sm">
+              <p className="text-base text-gray-600 leading-relaxed max-w-xs">
                 Curated recommendations are delivered instantly to the React
                 dashboard.
               </p>
